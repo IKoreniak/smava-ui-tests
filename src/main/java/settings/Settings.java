@@ -9,7 +9,7 @@ public class Settings {
 
     public static WebDriver webDriverSettings() {
         System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") +
-                "/src/main/resources/chromedriver.exe");
+                "/src/main/resources/chromedriver");
         WebDriver driver = new ChromeDriver();
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
